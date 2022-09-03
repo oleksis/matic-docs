@@ -13,8 +13,8 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1
         with:
-          # Check all markdown in docs
-          args: --verbose --no-progress './docs/**/*.md'
+          # Check all markdown in docs/develop
+          args: --verbose --no-progress './docs/develop/getting-started.md'
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
